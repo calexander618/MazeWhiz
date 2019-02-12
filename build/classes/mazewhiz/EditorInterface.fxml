@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minWidth="500.0" onKeyPressed="#handleKeyPress" prefHeight="560.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mazewhiz.EditorInterfaceController">
+   <children>
+      <AnchorPane fx:id="tilePane" layoutX="25.0" layoutY="14.0" prefHeight="450.0" prefWidth="450.0" />
+      <Button fx:id="saveButton" layoutX="25.0" layoutY="499.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="30.0" prefWidth="120.0" stylesheets="@MenuStyles.css" text="Save">
+         <styleClass>
+            <String fx:value="custom-button" />
+            <String fx:value="menu-button" />
+            <String fx:value="custom-font-future-thin" />
+         </styleClass></Button>
+      <Button fx:id="openButton" layoutX="355.0" layoutY="499.0" mnemonicParsing="false" onAction="#openFile" prefHeight="30.0" prefWidth="120.0" stylesheets="@MenuStyles.css" text="Open">
+         <styleClass>
+            <String fx:value="custom-button" />
+            <String fx:value="menu-button" />
+            <String fx:value="custom-font-future-thin" />
+         </styleClass></Button>
+      <Button id="start-button" layoutX="165.0" layoutY="478.0" mnemonicParsing="false" onAction="#playMap" prefHeight="41.0" prefWidth="170.0" stylesheets="@MenuStyles.css" text="Play">
+         <styleClass>
+            <String fx:value="custom-font-future" />
+            <String fx:value="custom-button" />
+            <String fx:value="text-medium" />
+         </styleClass></Button>
+      <HBox alignment="CENTER" layoutX="199.0" layoutY="525.0" prefHeight="21.0" prefWidth="103.0">
+         <children>
+            <Label styleClass="custom-font-future-thin" stylesheets="@MenuStyles.css" text="Map Size:">
+               <HBox.margin>
+                  <Insets right="3.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="sizeLabel" styleClass="custom-font-future-thin" stylesheets="@MenuStyles.css" text="30" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

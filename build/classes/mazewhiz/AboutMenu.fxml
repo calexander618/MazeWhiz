@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mazewhiz.AboutMenuController">
+   <children>
+      <StackPane layoutX="5.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="260.0">
+         <children>
+            <ImageView fitHeight="176.0" fitWidth="270.0" pickOnBounds="true">
+               <image>
+                  <Image url="@interfacesprites/menublue.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="200.0" />
+               </StackPane.margin>
+            </ImageView>
+            <ImageView fitHeight="282.0" fitWidth="270.0" pickOnBounds="true">
+               <image>
+                  <Image url="@interfacesprites/menugrey.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </ImageView>
+            <Button fx:id="exitButton" minHeight="13.0" minWidth="14.0" mnemonicParsing="false" onAction="#exitScreen" prefHeight="13.0" prefWidth="14.0" stylesheets="@MenuStyles.css">
+               <styleClass>
+                  <String fx:value="exit-button" />
+                  <String fx:value="custom-button" />
+               </styleClass>
+               <StackPane.margin>
+                  <Insets bottom="350.0" right="240.0" />
+               </StackPane.margin>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="169.0" stylesheets="@MenuStyles.css" text="About&#10;&#10;">
+               <styleClass>
+                  <String fx:value="custom-font-future" />
+                  <String fx:value="text-large" />
+               </styleClass>
+               <StackPane.margin>
+                  <Insets bottom="325.0" />
+               </StackPane.margin>
+            </Label>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="270.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="183.0" stylesheets="@MenuStyles.css" text="Designed by: &#10;Chase Alexander" textAlignment="CENTER" textFill="#eb3c3c">
+                     <styleClass>
+                        <String fx:value="custom-font-future-thin" />
+                        <String fx:value="text-medium" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="215.0" prefWidth="250.0" stylesheets="@MenuStyles.css" text="IN THIS APPLICATION YOU ARE ABLE&#10;TO BOTH PLAY AND BUILD DIFFERENT&#10;MAZES OF YOUR CHOOSING.&#10;&#10;TO GET STARTED, CLICK PLAY GAME&#10;WHICH WILL TAKE YOU TO THE MAIN &#10;INTERFACE WHERE YOU CAN PLAY&#10;LEVELS OF INCREASING DIFFICULTY.&#10;&#10;TO PLAY YOUR OWN MAZE, JUST&#10;OPEN THE MAZE EDITOR AND&#10;CUSTOMIZE YOUR LEVEL. &#10;&#10;NAVIGATE USING W,A,S,D!&#10;EDIT TILES USING SPACE!" textAlignment="CENTER">
+                     <styleClass>
+                        <String fx:value="custom-font-future-thin" />
+                        <String fx:value="text-small" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

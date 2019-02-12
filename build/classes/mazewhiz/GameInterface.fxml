@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootNode" minWidth="500.0" onKeyPressed="#handleKeyPress" prefHeight="560.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mazewhiz.GameInterfaceController">
+   <children>
+      <AnchorPane fx:id="tilePane" layoutX="25.0" layoutY="20.0" prefHeight="450.0" prefWidth="450.0" />
+      <VBox alignment="CENTER" layoutX="12.0" layoutY="470.0" prefHeight="49.0" prefWidth="476.0">
+         <children>
+            <Label styleClass="custom-font-future" stylesheets="@MenuStyles.css" text="CURRENT LEVEL:">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="84.0">
+               <children>
+                  <Label fx:id="levelLabel1" styleClass="custom-font-future-thin" stylesheets="@MenuStyles.css" text="01" textFill="RED">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="levelLabel2" styleClass="custom-font-future-thin" stylesheets="@MenuStyles.css" text="02">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="levelLabel3" styleClass="custom-font-future-thin" stylesheets="@MenuStyles.css" text="03">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="levelLabel4" styleClass="custom-font-future-thin" stylesheets="@MenuStyles.css" text="04">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="levelLabel5" styleClass="custom-font-future-thin" stylesheets="@MenuStyles.css" text="05" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Button id="start-button" fx:id="levelButton" disable="true" minHeight="25.0" mnemonicParsing="false" onAction="#levelUp" prefHeight="25.0" prefWidth="128.0" stylesheets="@MenuStyles.css" text="LEVEL UP!">
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="custom-font-future" />
+               </styleClass></Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

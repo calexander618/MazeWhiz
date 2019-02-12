@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mazewhiz.MainMenuController">
+   <children>
+      <StackPane layoutX="12.0" layoutY="48.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="322.0">
+         <children>
+            <ImageView fitHeight="127.0" fitWidth="345.0" pickOnBounds="true">
+               <image>
+                  <Image url="@interfacesprites/menublue.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="150.0" />
+               </StackPane.margin>
+            </ImageView>
+            <ImageView fitHeight="185.0" fitWidth="345.0" pickOnBounds="true">
+               <image>
+                  <Image url="@interfacesprites/menugrey.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="45.0" prefWidth="267.0" stylesheets="@MenuStyles.css" text="Mazewhiz">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="230.0" />
+               </StackPane.margin>
+               <styleClass>
+                  <String fx:value="custom-font-future" />
+                  <String fx:value="text-large" />
+               </styleClass>
+            </Label>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity">
+               <children>
+                  <Button id="start-button" fx:id="startButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startGame" prefHeight="50.0" prefWidth="300.0" stylesheets="@MenuStyles.css" text="Start Game" textAlignment="CENTER">
+                     <styleClass>
+                        <String fx:value="custom-button" />
+                        <String fx:value="custom-font-future-thin" />
+                        <String fx:value="text-medium" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="editorButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openEditor" prefHeight="45.0" prefWidth="275.0" stylesheets="@MenuStyles.css" text="Maze Editor" textAlignment="CENTER">
+                     <styleClass>
+                        <String fx:value="custom-button" />
+                        <String fx:value="menu-button" />
+                        <String fx:value="custom-font-future-thin" />
+                        <String fx:value="text-medium" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="aboutButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openAboutMenu" prefHeight="45.0" prefWidth="275.0" stylesheets="@MenuStyles.css" text="About" textAlignment="CENTER">
+                     <styleClass>
+                        <String fx:value="custom-button" />
+                        <String fx:value="menu-button" />
+                        <String fx:value="custom-font-future-thin" />
+                        <String fx:value="text-medium" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="exitButton" minHeight="13.0" minWidth="14.0" mnemonicParsing="false" onAction="#exitScreen" prefHeight="13.0" prefWidth="14.0" stylesheets="@MenuStyles.css">
+               <StackPane.margin>
+                  <Insets bottom="252.0" right="315.0" />
+               </StackPane.margin>
+               <styleClass>
+                  <String fx:value="exit-button" />
+                  <String fx:value="custom-button" />
+               </styleClass>
+            </Button>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

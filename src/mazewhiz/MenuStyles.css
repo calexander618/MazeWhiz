@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 19, 2018, 12:25:29 AM
+    Author     : chasealexander
+*/
+.root {
+    -fx-background-color: transparent;
+}
+
+@font-face {
+    src: url("fonts/kenvector_future.ttf");
+}
+
+@font-face {
+    src: url("fonts/kenvector_future_thin.ttf");
+}
+
+.custom-font-future {
+    -fx-font-family: "KenVector Future";
+}
+
+.text-large {
+    -fx-font-size: 40;
+}
+
+.text-medium {
+    -fx-font-size: 18;
+}
+
+.text-small {
+    -fx-font-size: 12;
+}
+
+.custom-font-future-thin {
+    -fx-font-family: "KenVector Future Thin";
+}
+
+.custom-button {
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  
+}
+
+.exit-button {
+      -fx-background-image: url("interfacesprites/exitbox.png");
+      -fx-background-size: 14 14;
+}
+
+
+#start-button {
+      -fx-background-image: url("interfacesprites/buttonyellow.png");
+      -fx-background-size: 300 50;
+}
+
+.menu-button {
+      -fx-background-image: url("interfacesprites/buttonblue.png");
+      -fx-background-size: 275 45;
+}
+
+
+
